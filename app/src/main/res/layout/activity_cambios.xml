@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título de la sección -->
+    <TextView
+        android:id="@+id/tvTituloInventario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de alumnos"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <!-- Código del producto -->
+    <EditText
+        android:id="@+id/Clave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Clave del alumno"
+        android:inputType="text"
+        android:layout_marginTop="10dp" />
+
+    <!-- Nombre del producto -->
+    <EditText
+        android:id="@+id/Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del alumno"
+        android:inputType="text"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grupos"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <!-- Categoría del producto -->
+    <Spinner
+        android:id="@+id/Turno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/Grupo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <!-- Cantidad del producto -->
+    <EditText
+        android:id="@+id/Promedio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Promedio"
+        android:inputType="number"
+        android:layout_marginTop="10dp" />
+
+    <!-- Método de pago -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carreras"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <RadioGroup
+        android:id="@+id/Carreras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/Progra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Programacion" />
+
+        <RadioButton
+            android:id="@+id/Sistemas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sistemas_Digitales" />
+
+        <RadioButton
+            android:id="@+id/Meca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mecatrónica" />
+
+        <RadioButton
+            android:id="@+id/MQSA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Máquinas" />
+    </RadioGroup>
+
+
+    <!-- Botón para regresar al menú principal -->
+    <Button
+        android:id="@+id/btnRegresarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:layout_marginTop="20dp"
+        android:background="#F44336"
+        android:textColor="#FFFFFF" />
+
+    <!-- Botón para agregar producto al inventario -->
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:layout_marginTop="20dp"
+        android:background="#4CAF50"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
